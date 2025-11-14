@@ -2,7 +2,7 @@
 
 [View Allure Report](https://showrav88.github.io/SaucedemoVAutomation-Playwright-with-java-script-/)
 
-##1️⃣ Project Overview
+## 1️⃣ Project Overview
 
 This is an end-to-end automation test: the user logs in with valid credentials, adds one product to the cart, verifies the product name, and logs out of the project for SauceDemo.
 
@@ -18,7 +18,7 @@ This is an end-to-end automation test: the user logs in with valid credentials, 
 
 5.Page Object Model (POM) design pattern for test maintainability
 
-##2️⃣ Technologies & Tools Used
+## 2️⃣ Technologies & Tools Used
 
 -JavaScript – main programming language
 
@@ -36,7 +36,7 @@ GitHub Actions – workflow automation
 
 -Rimraf – clean old reports before generating new ones
 
-## 📂 Project Structure
+## 3️⃣ 📂 Project Structure
 
 ```bash
 SaucedemoV/
@@ -62,7 +62,7 @@ SaucedemoV/
 ├─ README.md
 
 ```
-##4. Installation & Setup
+## 4️⃣ Installation & Setup
 1. Clone the repo
    
 ```bash
@@ -81,12 +81,12 @@ npx playwright install --with-deps
 npm install -D allure-playwright allure-commandline
 
 ```
-##4️⃣ Install Utility Package
+4.Install Utility Package
 ```bash
 npm install --save-dev rimraf
 
 ```
-##5️⃣ Running Project Locally
+## 5️⃣ Running Project Locally
 1. Clean previous reports:
 ```bash
 npm run allure:clean
@@ -117,9 +117,10 @@ npm run allure:open
 Reports available here:
 [Allure Report](https://showrav88.github.io/SaucedemoVAutomation-Playwright-with-java-script-/)
 
-##7️⃣Contact / Author
+## 7️⃣Contact / Author
 
 Author: Showrav Karmakar
+
 
 
 
