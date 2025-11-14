@@ -3,31 +3,32 @@ import Login from '../pages/login';
 import testData from '../../resource/testData.json';
 import AddToCart from '../pages/addToCart';
 test.describe('Valid User Login Tests and add to cart a product', () => {
-      let login,addToCart;
+      let login,addToCart; //declare page objects
   test.beforeEach(async ({ page }) => {
     login = new Login(page);
     addToCart = new AddToCart(page);
-    await page.goto('https://www.saucedemo.com/');
+    await page.goto('https://www.saucedemo.com/'); // before each test
   });
-    test('Valid User Login and add to cart a product', async ({ page }) => {
+    test('Valid user login, and the user can add a product to the cart.', async ({ page }) => {
 
 await login.clickUsernameField();
-await login.enterUsernameField(testData.username);
+await login.enterUsernameField(testData.username); //from resource folder
 await login.clickPasswordField();
-await login.enterPasswordField(testData.password);
+await login.enterPasswordField(testData.password); //from resource folder
 await login.clickLoginButton();
 await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
-  console.log('User is able to login with valid username and password');
+console.log('User is able to login with valid username and password');
 
 // Get all product names & Add to Cart buttons
-const productNames = await page.$$('.inventory_item_name');
-const buttons = await page.$$('button.btn_inventory');
+const productNames = await page.$$('.inventory_item_name'); //array of product name elements 0-5
+const buttons = await page.$$('button.btn_inventory'); //array of Add to Cart button elements 0-5
+
 
 // Choose a random product
-const randomIndex = Math.floor(Math.random() * productNames.length);
-const selectedName = await productNames[randomIndex].innerText();
+const randomIndex = Math.floor(Math.random() * productNames.length); //random index
+const selectedName = await productNames[randomIndex].innerText(); //get product name text
 
-console.log(` Randomly selected product: ${selectedName}`);
+console.log(` Randomly selected product: ${selectedName}`); 
 
 //  Add that product to cart
 await buttons[randomIndex].click();
@@ -56,7 +57,7 @@ await expect(page).toHaveURL('https://www.saucedemo.com/checkout-step-two.html')
 //  Validate product name in CHECKOUT STEP TWO
 const checkoutName = await page.locator('.inventory_item_name').innerText();
 expect(checkoutName).toBe(selectedName);
-console.log(`✔ Product name validated at Checkout Step Two: ${checkoutName}`);
+console.log(` Product name validated at Checkout Step Two: ${checkoutName}`);
 
 // Finish order
 await addToCart.clickFinishButton();
@@ -69,7 +70,7 @@ await addToCart.clickBackHomeButton();
 await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 
 // Logout
- await addToCart.clickHumburgerMenu();
+await addToCart.clickHumburgerMenu();
 await addToCart.clickLogoutButton();
 await expect(page).toHaveURL('https://www.saucedemo.com/');
 console.log(' User logged out successfully');

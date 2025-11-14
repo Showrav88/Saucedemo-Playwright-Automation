@@ -1,8 +1,21 @@
-
-# Playwright
+# Node
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Playwright outputs
+playwright-report/
+test-results/
+artifacts/
+
+# Allure: don't commit local results or generated static report
+allure-results/
+allure-report/
+
+# Misc
+.DS_Store
+.vscode/
+.idea/
+.env
+Functions/
