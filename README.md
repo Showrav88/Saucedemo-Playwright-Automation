@@ -106,7 +106,7 @@ npm run allure:generate
 npm run allure:open
 
 ```
-##6️⃣CI/CD & GitHub Pages
+## 6️⃣CI/CD & GitHub Pages
 
 -Workflow triggers on push to main branch
 
@@ -120,6 +120,7 @@ Reports available here:
 ## 7️⃣Contact / Author
 
 Author: Showrav Karmakar
+
 
 
 
