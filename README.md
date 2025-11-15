@@ -12,6 +12,8 @@ This is an end-to-end automation test: the user logs in with valid credentials, 
 
 3.Page Object Model (POM) design pattern for test maintainability
 
+4.Cross Browsers testing
+
 ## 2️⃣ Technologies & Tools Used
 
 -JavaScript – main programming language
@@ -22,9 +24,29 @@ This is an end-to-end automation test: the user logs in with valid credentials, 
 
 -Node.js – runtime environment
 
--Rimraf – clean old reports before generating new ones
+## 3️⃣ Installation & Setup
+1. Clone the repo
+   
+```bash
+git clone https://github.com/Showrav88/Saucedemo-Playwright-Automation.git
+cd Saucedemo-Playwright-Automation
 
-## 3️⃣ 📂 Project Structure
+```
+2. Install dependencies
+```bash
+npm ci
+npx playwright install --with-deps
+
+```
+##  Running Project Locally
+
+3.Run tests
+
+```bash
+npm run test
+```
+
+## 4️⃣ 📂 Project Structure
 
 ```bash
 SaucedemoV/
@@ -50,46 +72,35 @@ SaucedemoV/
 ├─ README.md
 
 ```
-## 4️⃣ Installation & Setup
-1. Clone the repo
-   
-```bash
-git clone https://github.com/Showrav88/SaucedemoVAutomation-Playwright-with-java-script-.git
-cd SaucedemoV
 
-```
-2. Install dependencies
-```bash
-npm ci
-npx playwright install --with-deps
-
-```
-3. Install Allure (if not installed globally)
+## 5️⃣ Allure Report Generate 
+1. Install Allure if wanted allure report 
 ```bash
 npm install -D allure-playwright allure-commandline
 
 ```
-4.Install Utility Package
+2.Install Utility Package
+-Rimraf – clean old reports before generating new ones
 ```bash
 npm install --save-dev rimraf
 
 ```
-## 5️⃣ Running Project Locally
-1. Clean previous reports:
+
+3. Clean previous reports:
 ```bash
 npm run allure:clean
 
 ```
-2.Run tests and generate results:
+4.Run tests and generate results:
 ```bash
 npm run test:allure
 
 ```
-3.Generate HTML report:
+5.Generate HTML report:
 ```bash
 npm run allure:generate
 ```
-4.Open report in browser:
+6.Open report in browser:
 ```bash
 npm run allure:open
 
@@ -99,6 +110,7 @@ npm run allure:open
 
 ##  Contact / Author
 Author: Showrav Karmakar
+
 
 
 
