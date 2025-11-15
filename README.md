@@ -94,10 +94,12 @@ npm run allure:generate
 npm run allure:open
 
 ```
+## Project result :
+[Drive link](https://drive.google.com/file/d/1_9iqFCRy5gkuz2OT1BfRV4MkISSLEDYr/view?usp=sharing)
 
 ##  Contact / Author
-
 Author: Showrav Karmakar
+
 
 
 
