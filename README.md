@@ -1,7 +1,5 @@
 ﻿# SaucedemoAutomation-Playwright-with-javascript-
 
-[View Allure Report](https://showrav88.github.io/SaucedemoVAutomation-Playwright-with-java-script-/)
-
 ## 1️⃣ Project Overview
 
 This is an end-to-end automation test: the user logs in with valid credentials, adds one product to the cart, verifies the product name, and logs out of the project for SauceDemo.
@@ -12,11 +10,7 @@ This is an end-to-end automation test: the user logs in with valid credentials, 
 
 2.Allure Reporting for beautiful test reports
 
-3.CI/CD setup using GitHub Actions
-
-4.Automated GitHub Pages deployment for Allure reports
-
-5.Page Object Model (POM) design pattern for test maintainability
+3.Page Object Model (POM) design pattern for test maintainability
 
 ## 2️⃣ Technologies & Tools Used
 
@@ -27,12 +21,6 @@ This is an end-to-end automation test: the user logs in with valid credentials, 
 -Allure Playwright & Allure Commandline – test reporting
 
 -Node.js – runtime environment
-
--Git & GitHub – version control & CI/CD
-
-GitHub Actions – workflow automation
-
--GitHub Pages – host Allure reports publicly
 
 -Rimraf – clean old reports before generating new ones
 
@@ -106,20 +94,11 @@ npm run allure:generate
 npm run allure:open
 
 ```
-## 6️⃣CI/CD & GitHub Pages
 
--Workflow triggers on push to main branch
-
--Playwright tests run automatically in GitHub Actions
-
--Allure HTML report is generated and deployed to GitHub Pages
-
-Reports available here:
-[Allure Report](https://showrav88.github.io/SaucedemoVAutomation-Playwright-with-java-script-/)
-
-## 7️⃣Contact / Author
+##  Contact / Author
 
 Author: Showrav Karmakar
+
 
 
 
